@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140724213924) do
+ActiveRecord::Schema.define(version: 20140726153552) do
 
   create_table "posts", force: true do |t|
     t.text     "content"
@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20140724213924) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "email"
   end
 
 end
