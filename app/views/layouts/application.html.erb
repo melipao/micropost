@@ -38,6 +38,13 @@
   </section>
 </nav>
 
+  <% flash.each do |type, message| %>
+    <div data-alert class="alert-box success radius <%= flass_class(type) %>">
+      <%= message %>
+      <a href="#" class="close">&times;</a>
+    </div>
+  <% end %>
+
     <%= yield %>
     <%= javascript_include_tag "application" %>
   </body>
